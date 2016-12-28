@@ -1,0 +1,10 @@
+.game {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+}
+.gameWrapper {
+text-align: center;
+height: 100%;
+}

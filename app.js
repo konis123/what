@@ -1,10 +1,15 @@
-var express = require('express')
-var app = express()
+var express = require('express');
+var app = express();
+
+
+app.set("view engine",'ejs');
+app.use(express.static(__dirname+'/public'));
 
 app.get('/', function (req, res) {
-  res.send('Hello World!')
-})
+  //res.render('main');
+  res.render('firstejs');
+});
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
-})
+  console.log('Example app listening on port 3000!');
+});
